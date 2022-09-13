@@ -4,7 +4,7 @@ layout: main
 {% for post in paginator.posts %}
 <article class="post">
   {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url(https://i1.wp.com/blackacai.com{{"/assets/img/" | prepend: site.baseurl | append : post.img}}resize=426%2C284)" href="{{post.url | prepend: site.baseurl}}"></a>
+    <a class="post-thumbnail" style="background-image: url(https://i1.wp.com/blackacai.com{{"/assets/img/" | prepend: site.baseurl | append : post.img}}?resize=426%2C284)" href="{{post.url | prepend: site.baseurl}}"></a>
   {% else %}
   {% endif %}
   <div class="post-content">
